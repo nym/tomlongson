@@ -20,17 +20,17 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Sura:400,700' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+    <div id="workspace"></div>
+    <div id="gradient"></div>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -53,345 +53,351 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
       <!-- Example row of columns -->
-      <div class="card">
-        <div class="card-content">
-          <div class="card-header">
-            <div class="row">
-              <div class="col-md-10">
-                              <img src="img/beard.png" style="float: left; margin-left: -10px;width: 120px;" />
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-md-10">
+                  <img src="img/beard.png" class="beard" />
 
-                <h1>Tom Longson</h1>
-                <h2>Senior Front-end Developer</h2>
+                  <h1>Tom Longson</h1>
+                  <h2>Senior Front-end Developer</h2>
+                </div>
               </div>
-            </div>
-          </div> <!-- end card header -->
-          <div class="card-body">
-            <section>
-            <div class="row">
-              <div class="col-md-2">
-                <h2>Tl;dr</h2>
-              </div>
-
-              <div class="col-md-10">
-                Tom is "smart, driven, motivated, and a self-starter", working as a Front-end developer in Silicon Valley. Notably:
-                <br/><br/>
-                <ul>
-                  <li>Raised capital from 500 Startups as a Founder of GogoCoin</li>
-                  <li>Worked for giants of media Sony and Disney</li>
-                  <li>Most recently used ReactJS / Django at FinTech Startup, SelfScore to failicate their MasterCard for International Student product</li>
-                  <li>Led Front-end Dev for Wells Fargo's most profitable B2B Product</li>
-                </ul>
-              </div>
-            </div>
-            </section>
-            <section>
+            </div> <!-- end card header -->
+            <div class="card-body">
+              <section>
               <div class="row">
                 <div class="col-md-2">
-                  <h2>Skills</h2>
+                  <h2>Tl;dr</h2>
                 </div>
+
                 <div class="col-md-10">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h2>10+ years</h2>
-                      <p>A decade developing rich application experiences with JavaScript frameworks such as ReactJS, AngularJS, Backbone, and YUI.</p>
-                      <br/>
-                      <img class="icon" src="img/reactjs.png" />
-                      <img class="icon" src="img/angularjs.png" />
-                      <img class="icon" src="img/js.png" />
-                      <img class="icon" src="img/html.png" />
+                  Tom is "smart, driven, motivated, and a self-starter", working as a Front-end developer in Seattle, Washington.
+                  <br/><br/>
+                  <ul>
+                    <li>Worked for giants of media Hulu, Sony, and Walt Disney</li>
 
-                    </div>
-                    <div class="col-md-4">
-                      <h2>Beyond Front-end</h2>
-                      <p>Tom has built production build systems, led backend development and operations, and has extensive experience in FinTech and e-Commerce.</p>
-                      <br/>
-                      <img class="icon" src="img/node.png" />
-                      <img class="icon" src="img/django.png" />
-                      <img class="icon" src="img/docker.png" />
-                      <img class="icon" src="img/jenkins.png" />
+                    <li>Raised capital from 500 Startups as a Founder of GogoCoin</li>
+                    <li>Most recently used ReactJS / Django at FinTech Startup, SelfScore to failicate their MasterCard for International Student product</li>
+                    <li>Led Front-end Dev for Wells Fargo's most profitable B2B Product</li>
+                  </ul>
+                </div>
+              </div>
+              </section>
+              <section>
+                <div class="row">
+                  <div class="col-md-2">
+                    <h2>Skills</h2>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h2>10+ years</h2>
+                        <p>A decade developing rich application experiences with JavaScript frameworks such as ReactJS, AngularJS, Backbone, and YUI.</p>
+                        <br/>
+                        <img class="icon" src="img/reactjs.png" />
+                        <img class="icon" src="img/angularjs.png" />
+                        <img class="icon" src="img/js.png" />
+                        <img class="icon" src="img/html.png" />
 
-                    </div>
-                    <div class="col-md-4">
-                      <h2>Mission Critical XP</h2>
-                      <p>Tom is a self-starter, having led a 500 startups company and as well as worked on high-value products for Sony and Wells Fargo.</p>
-                      <br/>
-                      <img class="icon" src="img/500.png" />
-                      <img class="icon" src="img/sony.png" />
-                      <img class="icon" src="img/wellsfargo.gif" />
+                      </div>
+                      <div class="col-md-4">
+                        <h2>Beyond Front-end</h2>
+                        <p>Tom has built production build systems, led backend development and operations, and has extensive experience in FinTech and e-Commerce.</p>
+                        <br/>
+                        <img class="icon" src="img/node.png" />
+                        <img class="icon" src="img/django.png" />
+                        <img class="icon" src="img/docker.png" />
+                        <img class="icon" src="img/jenkins.png" />
 
+                      </div>
+                      <div class="col-md-4">
+                        <h2>Mission Critical XP</h2>
+                        <p>Tom is a self-starter, having led a 500 startups company and as well as worked on high-value products for Sony and Wells Fargo.</p>
+                        <br/>
+                        <img class="icon" src="img/500.png" />
+                        <img class="icon" src="img/sony.png" />
+                        <img class="icon" src="img/wellsfargo.gif" />
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
 
-            <section>
-              <div class="row">
-                <div class="col-md-2">
-                  <h2>Technical</h2>
-                </div>
-                <div class="col-md-10">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h2>Client Side</h2>
-                      <br/>
-                      <ul>
-                      <li>JavaScript</li>
-                      <li>ReactJS</li>
-                      <li>AngularJS</li>
-                      <li>Backbone</li>
-                      <li>CSS3 / SCSS</li>
-                      <li>Box2d</li>
-                      <li>jQuery</li>
-                      <li>YUI</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h2>Server Side</h2>
-                      <br/>
-                      <ul>
-                      <li>NodeJS</li>
-                      <li>Python</li>
-                      <li>Django</li>
-                      <li>Mezzazine</li>
-                      <li>Ruby</li>
-                      <li>Postgres</li>
-                      <li>MongoDB</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h2>Infrastructure</h2>
-                      <br/>
-                      <ul>
-                      <li>AWS</li>
-                      <li>Docker</li>
-                      <li>Vagrant</li>
-                      <li>Jenkins</li>
-                      <li>Grunt + Gulp</li>
-                      </ul>
+              <section>
+                <div class="row">
+                  <div class="col-md-2">
+                    <h2>Technical</h2>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h2>Client Side</h2>
+                        <br/>
+                        <ul>
+                        <li>JavaScript</li>
+                        <li>ReactJS</li>
+                        <li>AngularJS</li>
+                        <li>Backbone</li>
+                        <li>CSS3 / SCSS</li>
+                        <li>Box2d</li>
+                        <li>jQuery</li>
+                        <li>YUI</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <h2>Server Side</h2>
+                        <br/>
+                        <ul>
+                        <li>NodeJS</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Mezzazine</li>
+                        <li>Ruby</li>
+                        <li>Postgres</li>
+                        <li>MongoDB</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <h2>Infrastructure</h2>
+                        <br/>
+                        <ul>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>Vagrant</li>
+                        <li>Jenkins</li>
+                        <li>Grunt + Gulp</li>
+                        </ul>
 
 
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
 
-            <section>
+              <section>
+                <div class="row">
+                  <div class="col-md-2">
+                    <h2>Experience</h2>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="job">
+                        <h4>2015-2016</h4>
+                        <h2>SelfScore</h2>
+                        <h3>Senior Front-end Developer</h3>
+                        <p>Developed a Credit Card Dashboard using React and SCSS for the frontend, and Django / Python REST APIs for the backend. Designed and built underwriting pipeline for user from being pre-qualified through approved.</p>
+                        <ul class="highlights"> 
+                          <li>Developed ReactJS Customer Dashboard</li> 
+                          <li>Created CRM for underwriting process with Django</li>
+                          <li>Built DevOps Continuous Deployment with AWS Elastic Beanstalk, Docker, and Jenkins</li>
+                          <li>Added support for oAuth with Facebook, Twitter, LinkedIn</li>
+                          <li>Developed "Magic Link" one time password emails</li>
+                          <li>Integrated "Know Your Customer" checks with Jumio, Blockscore, and the National Student Clearinghouse</li>
+                          <li>Created persona based end-to-end functional tests with Selenium and Webdriver using Node.js</li>
+                          <li>Developed Prototype iOS App for tracking customers for fraud prevention</li>
+                        </ul> 
+
+                      </div>
+                     <div class="job">
+                        <h4>2013-2015</h4>
+                        <h2>GogoCoin</h2>
+                        <h3>CEO</h3>
+                        <p>Founded and developed Bitcoin Gift Card product from concept to market. Included a fully functional client built on top of </p>
+                        <ul class="highlights"> 
+                          <li>500 Startups, Batch 9</li> 
+                          <li>Featured at LAUNCH Fest</li>
+                          <li>Highlighted by TechCrunch</li>
+                          <li>Used NodeJS, Python, Postgres, and Vagarant</li>
+                          <li>Produced 10k+ gift cards for promotional and retail sale</li>
+                          <li>Partnered with Blockchain and Bitcoin.com
+                        </ul>
+                      </div>
+                      <div class="job">
+                        <h4>2011-2013</h4>
+                        <h2>Sony</h2>
+                        <h3>Senior Front-end Developer</h3>
+                        <p>Developed the Sony Playstation Store, which like iTunes, allows for anyone to purchase movies, video games, and more.</p>
+                        <ul class="highlights"> 
+                          <li>Developed Internationalization support for 30+ languages</li> 
+                          <li>Developed with BackboneJS</li>
+                          <li>Designed and developed SEO service with PhantomJS and NodeJS for all regions and languages</li>
+                        </ul>
+                      </div>
+                      <div class="job">
+                        <h4>2011-2011</h4>
+                        <h2>Singly</h2>
+                        <h3>UX Designer + Developer</h3>
+                        <p>Designed and did analysis on multiple projects related building the Singly hosted platform for The Locker Project (http://lockerproject.org/). Did development on an interactive guided setup, a merged contacts viewer, an intesting links collection, and a photo collection viewer.</p>
+                      </div>
+
+                      <div class="job">
+                        <h4>2008-2010</h4>
+                        <h2>Burning Man Earth</h2>
+                        <h3>Front-end Web Developer</h3>
+                        <p>Developed new system for adding, tracking, and searching events, art, theme camps, and people for the Burning Man art festival in Reno, Nevada.</p>
+                      </div>
+                      
+                      <div class="job"> 
+                        <h4>2009-2010</h4> 
+                        <h2>Wells Fargo</h2> 
+                        <h3>Senior Front-end Web Developer</h3> 
+                        <p>Developing applications and sales tools for commercial credit tools for the Comercial Services branch of Wells Fargo.</p> 
+                        <ul class="highlights"> 
+                          <li>Heavy use of JavaScript/YUI.</li> 
+                          <li>Built custom purely JavaScript MVC framework.</li> 
+                        </ul> 
+                      </div> 
+                      
+                      <div class="job"> 
+                        <h4>2008-2009</h4> 
+                        <h2>Stop The Spin</h2> 
+                        <h3>Lead Developer / CTO</h3> 
+                        <p>Led development on political awareness and action site. Stop the Spin was an experimental project aimed at allowing better understanding of "wicked problems", such as healthcare, abortion, global warming, etc. Used decision trees in order to allow people to explore complex issues, allowing them to arrive at a position based on logical conclusions.</p> 
+                        <ul class="highlights"> 
+                          <li>Utilized Python, Pylons, SQLAlchemy, Mako, JavaScript, jQuery, and Processing, using a MySQL backend.</li> 
+                          <li>Oversaw a team of writers to create decision tree content.</li> 
+                        </ul> 
+                      </div> 
+                      
+                      <div class="job"> 
+                        <h4>2007 - 2008</h4> 
+                        <h2>Cars.com</h2> 
+                        <h3>Manager for Research & Development at Cars.com</h3> 
+                        <p>Promoted to head of department. Built and led a team of three developers to pursue potential new interfaces for Cars.com & NewCars.com. Responsible for executing products from concept to frutition. Projects included (but not limited to) advanced tools to allow consumers better ways to find and compare cars, internal tools to visualize sales data geographically, consumer dealer locator tools, car search widgets, and a new car photo compare.</p> 
+                        <ul class="highlights"> 
+                          <li>Utilized PHP, JavaScript, and Adobe Flex, using MySQL databases of Make/Model data and Dealership data.
+                        </ul> 
+                      </div> 
+                      
+                      <div class="job"> 
+                        <h4>2006 - 2007</h4> 
+                        <h2>Cars.com</h2> 
+                        <h3>Lead Technical Developer for Research & Development at Cars.com</h3> 
+                        <p>Designed and developed a variety of prototype user friendly applications for Cars.com and NewCars.com.</p> 
+                        <ul class="highlights"> 
+                          <li>Led development for department.</li> 
+                          <li>Utilized PHP, Ruby, and JavaScript, using MySQL databases of Make/Model data.</li> 
+                        </ul> 
+                      </div> 
+                      
+                      <div class="job">
+                        <h4>2005-2006</h4> 
+                        <h2>Disney</h2> 
+                        <h3>Front-end Web Developer</h3> 
+                        <p>Designed and implemented a central repository for all television animation staff and potential candidates. System included features to allow management to review and rate all artists, maintain in depth history of creative talent, and preserve a digital archive of portfolios for reprinting and reviewing online.</p> 
+                        <ul class="highlights"> 
+                          <li>Led front-end development and co-developed PHP backend.</li> 
+                          <li>Initiated adoption of Web 2.0 style UI practices.</li> 
+                          <li>Utilized PHP, JavaScript, and XSLT, using a MySQL database.</li> 
+                        </ul> 
+                      </div>
+
+                  </div>
+                </div>
+              </section>
+
+
+              <section style="display:none;">
               <div class="row">
-                <div class="col-md-2">
-                  <h2>Experience</h2>
+                <div class="col-md-4">
+                  <h2>Heading</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <div class="col-md-10">
-                  <div class="job">
-                      <h4>2015-2016</h4>
-                      <h2>SelfScore</h2>
-                      <h3>Senior Front-end Developer</h3>
-                      <p>Developed a Credit Card Dashboard using React and SCSS for the frontend, and Django / Python REST APIs for the backend. Designed and built underwriting pipeline for user from being pre-qualified through approved.</p>
-                      <ul class="highlights"> 
-                        <li>Developed ReactJS Customer Dashboard</li> 
-                        <li>Created CRM for underwriting process with Django</li>
-                        <li>Built DevOps Continuous Deployment with AWS Elastic Beanstalk, Docker, and Jenkins</li>
-                        <li>Added support for oAuth with Facebook, Twitter, LinkedIn</li>
-                        <li>Developed "Magic Link" one time password emails</li>
-                        <li>Integrated "Know Your Customer" checks with Jumio, Blockscore, and the National Student Clearinghouse</li>
-                        <li>Created persona based end-to-end functional tests with Selenium and Webdriver using Node.js</li>
-                        <li>Developed Prototype iOS App for tracking customers for fraud prevention</li>
-                      </ul> 
-
-                    </div>
-                   <div class="job">
-                      <h4>2013-2015</h4>
-                      <h2>GogoCoin</h2>
-                      <h3>CEO</h3>
-                      <p>Founded and developed Bitcoin Gift Card product from concept to market. Included a fully functional client built on top of </p>
-                      <ul class="highlights"> 
-                        <li>500 Startups, Batch 9</li> 
-                        <li>Featured at LAUNCH Fest</li>
-                        <li>Highlighted by TechCrunch</li>
-                        <li>Used NodeJS, Python, Postgres, and Vagarant</li>
-                        <li>Produced 10k+ gift cards for promotional and retail sale</li>
-                        <li>Partnered with Blockchain and Bitcoin.com
-                      </ul>
-                    </div>
-                    <div class="job">
-                      <h4>2011-2013</h4>
-                      <h2>Sony</h2>
-                      <h3>Senior Front-end Developer</h3>
-                      <p>Developed the Sony Playstation Store, which like iTunes, allows for anyone to purchase movies, video games, and more.</p>
-                      <ul class="highlights"> 
-                        <li>Developed Internationalization support for 30+ languages</li> 
-                        <li>Developed with BackboneJS</li>
-                        <li>Designed and developed SEO service with PhantomJS and NodeJS for all regions and languages</li>
-                      </ul>
-                    </div>
-                    <div class="job">
-                      <h4>2011-2011</h4>
-                      <h2>Singly</h2>
-                      <h3>UX Designer + Developer</h3>
-                      <p>Designed and did analysis on multiple projects related building the Singly hosted platform for The Locker Project (http://lockerproject.org/). Did development on an interactive guided setup, a merged contacts viewer, an intesting links collection, and a photo collection viewer.</p>
-                    </div>
-
-                    <div class="job">
-                      <h4>2008-2010</h4>
-                      <h2>Burning Man Earth</h2>
-                      <h3>Front-end Web Developer</h3>
-                      <p>Developed new system for adding, tracking, and searching events, art, theme camps, and people for the Burning Man art festival in Reno, Nevada.</p>
-                    </div>
-                    
-                    <div class="job"> 
-                      <h4>2009-2010</h4> 
-                      <h2>Wells Fargo</h2> 
-                      <h3>Senior Front-end Web Developer</h3> 
-                      <p>Developing applications and sales tools for commercial credit tools for the Comercial Services branch of Wells Fargo.</p> 
-                      <ul class="highlights"> 
-                        <li>Heavy use of JavaScript/YUI.</li> 
-                        <li>Built custom purely JavaScript MVC framework.</li> 
-                      </ul> 
-                    </div> 
-                    
-                    <div class="job"> 
-                      <h4>2008-2009</h4> 
-                      <h2>Stop The Spin</h2> 
-                      <h3>Lead Developer / CTO</h3> 
-                      <p>Led development on political awareness and action site. Stop the Spin was an experimental project aimed at allowing better understanding of "wicked problems", such as healthcare, abortion, global warming, etc. Used decision trees in order to allow people to explore complex issues, allowing them to arrive at a position based on logical conclusions.</p> 
-                      <ul class="highlights"> 
-                        <li>Utilized Python, Pylons, SQLAlchemy, Mako, JavaScript, jQuery, and Processing, using a MySQL backend.</li> 
-                        <li>Oversaw a team of writers to create decision tree content.</li> 
-                      </ul> 
-                    </div> 
-                    
-                    <div class="job"> 
-                      <h4>2007 - 2008</h4> 
-                      <h2>Cars.com</h2> 
-                      <h3>Manager for Research & Development at Cars.com</h3> 
-                      <p>Promoted to head of department. Built and led a team of three developers to pursue potential new interfaces for Cars.com & NewCars.com. Responsible for executing products from concept to frutition. Projects included (but not limited to) advanced tools to allow consumers better ways to find and compare cars, internal tools to visualize sales data geographically, consumer dealer locator tools, car search widgets, and a new car photo compare.</p> 
-                      <ul class="highlights"> 
-                        <li>Utilized PHP, JavaScript, and Adobe Flex, using MySQL databases of Make/Model data and Dealership data.
-                      </ul> 
-                    </div> 
-                    
-                    <div class="job"> 
-                      <h4>2006 - 2007</h4> 
-                      <h2>Cars.com</h2> 
-                      <h3>Lead Technical Developer for Research & Development at Cars.com</h3> 
-                      <p>Designed and developed a variety of prototype user friendly applications for Cars.com and NewCars.com.</p> 
-                      <ul class="highlights"> 
-                        <li>Led development for department.</li> 
-                        <li>Utilized PHP, Ruby, and JavaScript, using MySQL databases of Make/Model data.</li> 
-                      </ul> 
-                    </div> 
-                    
-                    <div class="job">
-                      <h4>2005-2006</h4> 
-                      <h2>Disney</h2> 
-                      <h3>Front-end Web Developer</h3> 
-                      <p>Designed and implemented a central repository for all television animation staff and potential candidates. System included features to allow management to review and rate all artists, maintain in depth history of creative talent, and preserve a digital archive of portfolios for reprinting and reviewing online.</p> 
-                      <ul class="highlights"> 
-                        <li>Led front-end development and co-developed PHP backend.</li> 
-                        <li>Initiated adoption of Web 2.0 style UI practices.</li> 
-                        <li>Utilized PHP, JavaScript, and XSLT, using a MySQL database.</li> 
-                      </ul> 
-                    </div>
-
+                <div class="col-md-4">
+                  <h2>Heading</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Heading</h2>
+                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
               </div>
-            </section>
+              </section>
+              <section>
 
+                <div class="row">
+                  <div class="col-md-2">
+                    <h2>Distinctions</h2>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="distinction"> 
+                      <h4>2015</h4> 
+                      <h2>Joined 500 Startups</h2> 
+                      <p>Founded a company, GogoCoin, with investment and mentorship from Dave McClure and Sean Percival.</p>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/N4VRHF3mOss" frameborder="0" allowfullscreen></iframe>
+                    </div> 
 
-            <section style="display:none;">
-            <div class="row">
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
+                    <div class="distinction"> 
+                      <h4>2015</h4> 
+                      <h2>Presented at Draper University</h2> 
+                      <p>Interviewed Tim Draper for Hero City and Draper University in San Mateo.</p> 
+                    </div> 
+
+                    <div class="distinction"> 
+                      <h4>2014</h4> 
+                      <h2>Speaker / Singularity University</h2> 
+                      <p>Interviewed by Salim Ismail for Singularity University at NASA Ames.</p> 
+                    </div> 
+
+                    <div class="distinction"> 
+                      <h4>2014</h4> 
+                      <h2>Speaker / LAUNCH FEST</h2> 
+                      <p>Invited to speak at LAUNCH FEST by Jason Calcanis and hosted a booth in Startup Alley at the Concorse Center.</p> 
+                    </div> 
+                    
+                    <div class="distinction"> 
+                      <h4>2014</h4> 
+                      <h2>This Week In Startups</h2> 
+                      <p>Guest speaker on This Week In Startups with Jason Calcanis.</p> 
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6mEjPW27ZFE" frameborder="0" allowfullscreen></iframe>
+                    </div> 
+                    
+                    <div class="distinction"> 
+                      <h4>2014</h4> 
+                      <h2>Presented at DorkBot SF</h2> 
+                      <p>Did a presentation on the Bitcoin network at San Francisco's DorkBot.</p> 
+                    </div> 
+
+                    <div class="distinction"> 
+                      <h4>2010</h4> 
+                      <h2>Where 2.0</h2> 
+                      <p>Invited to demo the OpenView Project's Streetview Tricycle as part of the Where Fair.</p> 
+                    </div> 
+
+                    <div class="distinction"> 
+                      <h4>2006</h4> 
+                      <h2>O'Reilly Google Maps Hacks</h2> 
+                      <p>Authored sections on defining custom map markers in Google Maps and creating mapped slideshows of one's travels.</p> 
+                    </div> 
+                    <div class="distinction"> 
+                      <h4>2005</h4> 
+                      <h2>O'Reilly Mapping Hacks</h2> 
+                      <p>Authored section on georefrencing images with EXIF metadata.</p> 
+                    </div>
+                  </div>
+                </div>
+
+              </section>
             </div>
-            </section>
-            <section>
 
-              <div class="row">
-                <div class="col-md-2">
-                  <h2>Distinctions</h2>
-                </div>
-                <div class="col-md-10">
-                  <div class="distinction"> 
-                    <h4>2015</h4> 
-                    <h2>Joined 500 Startups</h2> 
-                    <p>Founded a company, GogoCoin, with investment and mentorship from Dave McClure and Sean Percival.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N4VRHF3mOss" frameborder="0" allowfullscreen></iframe>
-                  </div> 
-
-                  <div class="distinction"> 
-                    <h4>2015</h4> 
-                    <h2>Presented at Draper University</h2> 
-                    <p>Interviewed Tim Draper for Hero City and Draper University in San Mateo.</p> 
-                  </div> 
-
-                  <div class="distinction"> 
-                    <h4>2014</h4> 
-                    <h2>Speaker / Singularity University</h2> 
-                    <p>Interviewed by Salim Ismail for Singularity University at NASA Ames.</p> 
-                  </div> 
-
-                  <div class="distinction"> 
-                    <h4>2014</h4> 
-                    <h2>Speaker / LAUNCH FEST</h2> 
-                    <p>Invited to speak at LAUNCH FEST by Jason Calcanis and hosted a booth in Startup Alley at the Concorse Center.</p> 
-                  </div> 
-                  
-                  <div class="distinction"> 
-                    <h4>2014</h4> 
-                    <h2>This Week In Startups</h2> 
-                    <p>Guest speaker on This Week In Startups with Jason Calcanis.</p> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6mEjPW27ZFE" frameborder="0" allowfullscreen></iframe>
-                  </div> 
-                  
-                  <div class="distinction"> 
-                    <h4>2014</h4> 
-                    <h2>Presented at DorkBot SF</h2> 
-                    <p>Did a presentation on the Bitcoin network at San Francisco's DorkBot.</p> 
-                  </div> 
-
-                  <div class="distinction"> 
-                    <h4>2010</h4> 
-                    <h2>Where 2.0</h2> 
-                    <p>Invited to demo the OpenView Project's Streetview Tricycle as part of the Where Fair.</p> 
-                  </div> 
-
-                  <div class="distinction"> 
-                    <h4>2006</h4> 
-                    <h2>O'Reilly Google Maps Hacks</h2> 
-                    <p>Authored sections on defining custom map markers in Google Maps and creating mapped slideshows of one's travels.</p> 
-                  </div> 
-                  <div class="distinction"> 
-                    <h4>2005</h4> 
-                    <h2>O'Reilly Mapping Hacks</h2> 
-                    <p>Authored section on georefrencing images with EXIF metadata.</p> 
-                  </div>
-                </div>
-              </div>
-
-            </section>
+            <div class="card-footer">
+              <p></p>
+            </div> <!-- /card-footer -->
           </div>
-
-          <div class="card-footer">
-            <p></p>
-          </div> <!-- /card-footer -->
-        </div>
-      </div> <!-- /card -->
+        </div> <!-- /card -->
+      </div>
+      </div>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

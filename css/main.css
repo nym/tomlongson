@@ -1,18 +1,39 @@
+@font-face {
+  font-family: GraphikLight;
+  src: url("../fonts/Graphik-Light.otf") format("opentype");
+}
 
+body{
+   background-color: #fff;
+   padding: 0px;
+   margin: 0px;
+ }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+#workspace {
+  position: fixed;
+  z-index: -2;
+  top: 0; left: 0; right: 0; bottom: 0;
+  padding: 0px;
+  margin: 0px;
 
+  background-image: url(../img/spaceneedlebg.svg);
+  background-size: cover;
+  background-position: top left;
+  margin-top: 50px;
+}
 
-body {
-
-background:  #ccc;
-color: #444;
+#gradient {
+  position: fixed;
+  z-index: -1;
+  top: 0; left: 0; right: 0; bottom: 0;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.2;
+  background-image:repeating-linear-gradient(-45deg, #8067B7,#EC87C0);
 }
 
 h2 {
-	font-family: Sura;
+	font-family: GraphikLight;
 	font-size: 20px;
 	margin: 0; padding: 0;
 	letter-spacing: 2px;
@@ -20,16 +41,23 @@ h2 {
 }
 
 nav.navbar {
-	background: #212723;
+	background: #fff;
 	color: white;
 	box-shadow: 0 10px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.12);
-	font-family: Sura;
+	font-family: GraphikLight;
 }
 
+.beard {
+  float: left; 
+  margin-left: -10px;
+  width: 120px;
+  margin-top: -8px;
+}
 /* Card Base Style */
 
 .card {
-	margin-top: 40px;
+	margin-top: 65px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -38,30 +66,30 @@ nav.navbar {
 /* Card Header */
 
 .card-header {
-		  -webkit-animation: slideInTop 1s ease;
+  border-top: 1px solid #bbb;
+  -webkit-animation: slideInTop 1s ease;
           animation: fadeInBottom 2s ease;
 
-	background: linear-gradient(to right, #7DCFCB, #fff);
-	background-size: 200%, 200%;
+	background: linear-gradient(to right, #eee, #fff);
 
 	border-radius: 0px;
 	overflow: hidden;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-	font-family: Sura;
+	font-family: GraphikLight;
 	text-transform: uppercase;
 	padding: 50px;
 }
 .card-header h1 {
-    color: #000;
+  color: #000;
 	font-size: 55px;
 	margin-bottom: 0px;
 	padding: 0;
 }
 .card-header h2 {
-		  -webkit-animation: slideInTop 2.0s ease;
-          animation: buttonFadeInUp 2.0s ease;
+  -webkit-animation: slideInTop 2.0s ease;
+      animation: buttonFadeInUp 2.0s ease;
 	color: #348E9A;
-	font-size: 22.1px;
+	font-size: 23px;
 	padding: 0;
 	margin: 0;
 		font-style: italic;
@@ -86,8 +114,7 @@ nav.navbar {
 
 /* Resume specific style */
 .card-body > section {
-		padding: 50px;
-		background: white;
+	padding: 50px;
 	border-radius: 0px;
 	overflow: hidden;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
